@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="40.5292mm" height="40.5292mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 277.33 277.33"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .str0 {stroke:#FEFEFE;stroke-width:3.62;stroke-miterlimit:22.9256}
+    .fil0 {fill:none}
+    .fil1 {fill:#FEFEFE}
+    .fil2 {fill:#FEFEFE;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <rect class="fil0" x="1.81" y="1.81" width="273.71" height="273.71"/>
+  <polygon class="fil1 str0" points="1.81,8.65 1.81,1.81 8.65,1.81 70.24,1.81 70.24,8.65 8.65,8.65 8.65,70.24 1.81,70.24 "/>
+  <polygon class="fil1 str0" points="1.81,268.68 1.81,275.52 8.65,275.52 70.24,275.52 70.24,268.68 8.65,268.68 8.65,207.09 1.81,207.09 "/>
+  <polygon class="fil1 str0" points="275.52,8.65 275.52,1.81 268.68,1.81 207.09,1.81 207.09,8.65 268.68,8.65 268.68,70.24 275.52,70.24 "/>
+  <polygon class="fil1 str0" points="275.52,268.68 275.52,275.52 268.68,275.52 207.09,275.52 207.09,268.68 268.68,268.68 268.68,207.09 275.52,207.09 "/>
+  <g id="_1458913000944">
+   <path class="fil2" d="M184.62 133.84c5.49,-9.35 7.85,-20.19 6.76,-30.97 -1.61,-16.06 -10.58,-30.26 -25.24,-39.97l-9.95 15c10.08,6.68 16.21,16.2 17.27,26.78 0.49,4.91 -0.13,9.88 -1.8,14.53 -1.67,4.65 -4.35,8.87 -7.85,12.36l-10.73 10.73 14.57 4.28c38.1,11.16 38.55,49.48 38.55,49.87l18.01 0c0,-16.11 -8.61,-47.58 -39.58,-62.59z"/>
+   <path class="fil2" d="M120.66 142.41c19.86,0 36.02,-16.15 36.02,-36.01 0,-19.86 -16.15,-36.02 -36.02,-36.02 -19.86,0 -36.01,16.15 -36.01,36.02 0,19.86 16.15,36.01 36.01,36.01zm0 -54.02c9.93,0 18.01,8.08 18.01,18.01 0,9.93 -8.08,18.01 -18.01,18.01 -9.93,0 -18,-8.08 -18,-18.01 0,-9.93 8.08,-18.01 18,-18.01zm13.51 63.03l-27.01 0c-29.79,0 -54.02,24.23 -54.02,54.02l0 9 18 0 0 -9c0,-19.86 16.15,-36.02 36.02,-36.02l27.01 0c19.86,0 36.01,16.15 36.01,36.02l0 9 18.01 0 0 -9c0,-29.79 -24.23,-54.02 -54.02,-54.02z"/>
+  </g>
+ </g>
+</svg>

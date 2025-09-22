@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "DM Sans", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #010614;
+}
+
+@layer utilities {
+  .shadow-azul {
+    box-shadow: 0px -20px 60px #09285a71;
+  }
+
+  .border-gradient-blue-purple::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 4px;
+    border-radius: inherit;
+    background: linear-gradient(-45deg, #93c5fd, #e9d5ff);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+  }
+
+  .border-gradient::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    background: linear-gradient(-45deg, #000, transparent 90%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+  }
+
+  .border-gradient-5::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    padding: 2px;
+    border-radius: inherit;
+    background: linear-gradient(-45deg, #00000033, transparent 90%);
+    -webkit-mask: linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+  }
+
+  .animate-girar-lento {
+    animation: girar-lento 250s linear infinite;
+  }
+
+  .animate-girar {
+    animation: girar-lento 25s linear infinite;
+  }
+
+  .animate-sobe-desce {
+    animation: sobe-desce 3s ease-in-out infinite alternate;
+  }
+
+  .animate-sobe-desce-inverse {
+    animation: sobe-desce-inverse 4s ease-in-out infinite alternate;
+  }
+
+  .animate-slider {
+    animation: slider 80s linear infinite;
+  }
+
+  .animate-sobe-desce-cabo {
+    animation: sobe-desce-cabo 20s linear infinite alternate;
+  }
+
+  .animate-sobe-desce-cabo-inverse {
+    animation: sobe-desce-cabo-inverse 25s linear infinite alternate;
+  }
+
+  .slider:hover > .animate-slider {
+    animation-play-state: paused;
+  }
+
+  @keyframes girar-lento {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes sobe-desce {
+    0% {
+      transform: translateY(-10px) rotate(-10deg);
+    }
+    50% {
+      transform: translateY(10px) rotate(50deg);
+    }
+    100% {
+      transform: translateY(-10px) rotate(10deg);
+    }
+  }
+
+  @keyframes sobe-desce-inverse {
+    0% {
+      transform: translateY(10px) rotate(10deg);
+    }
+    50% {
+      transform: translateY(-10px) rotate(-50deg);
+    }
+    100% {
+      transform: translateY(10px) rotate(10deg);
+    }
+  }
+
+  @keyframes slider {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  @keyframes sobe-desce-cabo {
+    0% {
+      top: -25%; /* começa acima do cabo */
+    }
+    100% {
+      top: 100%; /* desce até passar o cabo */
+    }
+  }
+
+  @keyframes sobe-desce-cabo-inverse {
+    0% {
+      top: 100%; /* começa embaixo */
+    }
+    100% {
+      top: -25%; /* sobe até passar do topo */
+    }
+  }
+}
