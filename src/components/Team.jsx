@@ -52,7 +52,14 @@ export const Team = () => {
 
         <div className="relative flex flex-col gap-8">
           <div className="flex justify-center">
-            <div className="relative max-w-[320px] p-[2px] overflow-hidden rounded-xl ">
+            <motion.div
+              variants={{
+                hidden: { y: -50, opacity: 0 },
+                visible: { y: 0, opacity: 1 },
+              }}
+              transition={{ duration: 0.3 }}
+              className="relative max-w-[320px] p-[2px] overflow-hidden rounded-xl"
+            >
               <div className="absolute top-2/4 left-2/4 -translate-2/4 w-[150%] h-[200%] bg-gradient-to-tr from-purple-950 via-[#010614] via-75% to-purple-800 animate-[spin_4s_linear_infinite]"></div>
 
               <div className="relative z-20 overflow-hidden p-4 rounded-xl bg-[#010614]">
@@ -98,11 +105,18 @@ export const Team = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           <div className="flex justify-between items-center">
-            <div className="relative max-w-[320px] p-[2px] overflow-hidden rounded-xl ">
+            <motion.div
+              variants={{
+                hidden: { x: -50, opacity: 0 },
+                visible: { x: 0, opacity: 1 },
+              }}
+              transition={{ duration: 0.3 }}
+              className="relative max-w-[320px] p-[2px] overflow-hidden rounded-xl"
+            >
               <div className="absolute top-2/4 left-2/4 -translate-2/4 w-[150%] h-[200%] bg-gradient-to-tr from-blue-900 via-[#010614] via-75% to-blue-800 animate-[spin_4s_linear_infinite]"></div>
 
               <div className="relative z-20 overflow-hidden p-4 rounded-xl bg-[#010614]">
@@ -168,9 +182,16 @@ export const Team = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className="relative overflow-hidden flex items-center justify-center w-20 h-20 rounded-2xl">
+            <motion.div
+              variants={{
+                hidden: { scale: 0.8, opacity: 0 },
+                visible: { scale: 1, opacity: 1 },
+              }}
+              transition={{ duration: 0.3 }}
+              className="relative overflow-hidden flex items-center justify-center w-20 h-20 rounded-2xl"
+            >
               <div className="absolute top-2/4 left-2/4 -translate-2/4 inset-0 w-28 h-28 bg-gradient-to-tr from-blue-800 via-blue-100 to-blue-800 animate-[spin_4s_linear_infinite]"></div>
 
               <div className="absolute top-2/4 left-2/4 -translate-2/4 z-10 w-[77px] h-[77px] rounded-2xl bg-[#010614]"></div>
@@ -180,9 +201,16 @@ export const Team = () => {
                 src="/images/logo-ditin-w.svg"
                 alt="Logo da DITIN"
               />
-            </div>
+            </motion.div>
 
-            <div className="relative max-w-[320px] p-[2px] overflow-hidden rounded-xl ">
+            <motion.div
+              variants={{
+                hidden: { x: 50, opacity: 0 },
+                visible: { x: 0, opacity: 1 },
+              }}
+              transition={{ duration: 0.3 }}
+              className="relative max-w-[320px] p-[2px] overflow-hidden rounded-xl"
+            >
               <div className="absolute top-2/4 left-2/4 -translate-2/4 w-[150%] h-[200%] bg-gradient-to-tr from-purple-950 via-[#010614] via-75% to-purple-800 animate-[spin_4s_linear_infinite]"></div>
 
               <div className="relative z-20 overflow-hidden p-4 rounded-xl bg-[#010614]">
@@ -248,11 +276,18 @@ export const Team = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
 
           <div className="flex justify-center">
-            <div className="relative max-w-[320px] p-[2px] overflow-hidden rounded-xl ">
+            <motion.div
+              variants={{
+                hidden: { y: 50, opacity: 0 },
+                visible: { y: 0, opacity: 1 },
+              }}
+              transition={{ duration: 0.3 }}
+              className="relative max-w-[320px] p-[2px] overflow-hidden rounded-xl"
+            >
               <div className="absolute top-2/4 left-2/4 -translate-2/4 w-[150%] h-[200%] bg-gradient-to-tr from-blue-900 via-[#010614] via-75% to-blue-800 animate-[spin_4s_linear_infinite]"></div>
 
               <div className="relative z-20 overflow-hidden p-4 rounded-xl bg-[#010614]">
@@ -293,27 +328,41 @@ export const Team = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
 
-          <div className="flex gap-3 h-[90%] absolute top-2/4 left-2/4 -translate-2/4">
+          <motion.div
+            variants={{
+              hidden: { scale: 0.9, opacity: 0 },
+              visible: { scale: 1, opacity: 1 },
+            }}
+            transition={{ duration: 0.2 }}
+            className="flex gap-3 h-[90%] absolute top-2/4 left-2/4 -translate-2/4"
+          >
             <div className=" w-[1px] h-full bg-white/10 overflow-hidden relative">
               <div className="h-1/4 w-1 absolute bg-gradient-to-b via-blue-500/60 animate-sobe-desce-cabo-inverse"></div>
             </div>
             <div className=" w-[1px] h-full bg-white/10 overflow-hidden relative">
               <div className="h-1/4 w-1 absolute bg-gradient-to-b via-purple-500/60 animate-sobe-desce-cabo"></div>
             </div>
-          </div>
+          </motion.div>
 
-          <div className="flex gap-3 h-[90%] absolute top-2/4 left-2/4 -translate-2/4 rotate-90">
+          <motion.div
+            variants={{
+              hidden: { scale: 0.9, opacity: 0 },
+              visible: { scale: 1, opacity: 1 },
+            }}
+            transition={{ duration: 0.2 }}
+            className="flex gap-3 h-[90%] absolute top-2/4 left-2/4 -translate-2/4 rotate-90"
+          >
             <div className=" w-[1px] h-full bg-white/10 overflow-hidden relative">
               <div className="h-1/4 w-1 absolute bg-gradient-to-b via-blue-500/60 animate-sobe-desce-cabo-inverse"></div>
             </div>
             <div className=" w-[1px] h-full bg-white/10 overflow-hidden relative">
               <div className="h-1/4 w-1 absolute bg-gradient-to-b via-purple-500/60 animate-sobe-desce-cabo"></div>
             </div>
-          </div>
-          
+          </motion.div>
+
           <div className="absolute w-[500px] h-[500px] bg-blue-500/12 rounded-full blur-[100px] top-2/4 left-2/4 -translate-2/4"></div>
         </div>
       </div>
