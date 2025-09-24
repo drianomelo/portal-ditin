@@ -10,7 +10,7 @@ function App() {
   return (
     <>
       <div
-        className="flex flex-col  w-full"
+        className="flex flex-col w-full"
         style={{ minHeight: "calc(100vh + 1px)" }}
       >
         <Header />

@@ -50,7 +50,7 @@ export const CustomAreaChart = () => {
         }}
         transition={{ duration: 0.5 }}
       >
-        <ResponsiveContainer width="100%" height={300} className="pr-12 mb-20">
+        <ResponsiveContainer width="100%" height={300} className="pr-12 mb-20 max-lg:pr-6 max-md:pr-0 max-md:-left-6 max-md:mb-10 relative">
           <AreaChart data={data}>
             <defs>
               <linearGradient id="colorGradient" x1="0" y1="0" x2="0" y2="1">
@@ -84,7 +84,7 @@ export const CustomAreaChart = () => {
         </ResponsiveContainer>
       </motion.div>
 
-      <div className="flex items-center justify-between gap-20">
+      <div className="flex items-start justify-between gap-20 max-lg:gap-10 max-md:flex-wrap max-md:gap-4">
         {stats.map((stat, index) => (
           <motion.div
             key={index}
@@ -93,12 +93,12 @@ export const CustomAreaChart = () => {
               visible: { y: 0, opacity: 1 },
             }}
             transition={{ duration: 0.5 }}
-            className="flex-1 flex flex-col"
+            className="flex-1 flex flex-col max-md:w-[150px] max-md:flex-auto"
           >
-            <span className="text-5xl border-b-2 pb-2 mb-3 border-white/10">
+            <span className="text-5xl border-b-2 pb-2 mb-3 border-white/10 max-md:text-4xl">
               <AnimatedNumber value={stat.value} duration={2000} />
             </span>
-            <span className="text-xs opacity-40 w-fit">{stat.label}</span>
+            <span className="text-xs opacity-40 w-fit max-md:text-[10px]">{stat.label}</span>
           </motion.div>
         ))}
       </div>

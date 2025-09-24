@@ -33,7 +33,7 @@ export const Slider = () => {
       }}
       className="w-full"
     >
-      <div className="w-full relative mb-20 overflow-hidden">
+      <div className="w-full relative mb-20 overflow-hidden max-md:mb-10">
         <div className="absolute z-20 h-full left-0 w-40 bg-gradient-to-r from-[#010614] from-10% to-transparent"></div>
         <div className="absolute z-20 h-full right-0 w-40 bg-gradient-to-l from-[#010614] from-10% to-transparent"></div>
         <motion.div
@@ -49,7 +49,7 @@ export const Slider = () => {
                 return (
                   <a
                     href="/"
-                    className="group relative overflow-hidden rounded-3xl min-w-[560px] p-[4px] bg-gradient-to-br hover:from-blue-400 hover:to-purple-300"
+                    className="group relative overflow-hidden rounded-3xl min-w-[560px] p-[4px] bg-gradient-to-br hover:from-blue-400 hover:to-purple-300 max-md:min-w-[350px]"
                   >
                     <span className="absolute w-full left-0 uppercase text-sm font-black bg-gradient-to-t from-blue-500 to-transparent -bottom-full z-12 text-center pb-4 pt-20 transition-all duration-300 group-hover:bottom-0">
                       {projeto.title}
@@ -70,7 +70,7 @@ export const Slider = () => {
                 return (
                   <a
                     href="/"
-                    className="group relative overflow-hidden rounded-3xl min-w-[560px] p-[4px] bg-gradient-to-br hover:from-blue-400 hover:to-purple-300"
+                    className="group relative overflow-hidden rounded-3xl min-w-[560px] p-[4px] bg-gradient-to-br hover:from-blue-400 hover:to-purple-300 max-md:min-w-[350px]"
                   >
                     <span className="absolute w-full left-0 uppercase text-sm font-black bg-gradient-to-t from-blue-500 to-transparent -bottom-full z-12 text-center pb-4 pt-20 transition-all duration-300 group-hover:bottom-0">
                       {projeto.title}
@@ -89,7 +89,7 @@ export const Slider = () => {
           </div>
         </motion.div>
       </div>
-      <div className="flex items-center justify-between gap-20">
+      <div className="flex items-start justify-between gap-20 max-lg:gap-10 max-md:flex-wrap max-md:gap-4">
         {stats.map((stat, index) => (
           <motion.div
             key={index}
@@ -98,12 +98,12 @@ export const Slider = () => {
               visible: { y: 0, opacity: 1 },
             }}
             transition={{ duration: 0.5 }}
-            className="flex-1 flex flex-col"
+            className="flex-1 flex flex-col max-md:w-[150px] max-md:flex-auto"
           >
-            <span className="text-5xl border-b-2 pb-2 mb-3 border-white/10">
+            <span className="text-5xl border-b-2 pb-2 mb-3 border-white/10 max-md:text-4xl">
               <AnimatedNumber value={stat.value} duration={2000} />
             </span>
-            <span className="text-xs opacity-40 w-fit">{stat.label}</span>
+            <span className="text-xs opacity-40 w-fit max-md:text-[10px]">{stat.label}</span>
           </motion.div>
         ))}
       </div>

@@ -60,9 +60,9 @@ export const Services = () => {
           },
         },
       }}
-      className="h-screen bg-white"
+      className="h-screen bg-white max-2xl:px-10 max-xl:h-auto max-lg:px-6 "
     >
-      <div className="max-w-[1200px] mx-auto py-20">
+      <div className="max-w-[1200px] mx-auto py-20 max-md:py-10">
         <motion.div
           variants={{
             hidden: { y: -100, opacity: 0 },
@@ -87,7 +87,7 @@ export const Services = () => {
           }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-black text-6xl w-[700px] mt-6 relative">
+          <h2 className="text-black text-6xl w-[700px] mt-6 relative max-lg:w-full max-md:text-5xl">
             Tecnologia que fortalece a{" "}
             <span className="bg-gradient-to-r from-blue-300 to-purple-200 bg-clip-text text-transparent">
               Gestão
@@ -100,8 +100,8 @@ export const Services = () => {
           </h2>
         </motion.div>
 
-        <div className="flex items-stretch gap-16">
-          <ul className="mt-8 pl-12 flex flex-col gap-16 pt-10 relative">
+        <div className="flex items-stretch gap-16 max-2xl:gap-6">
+          <ul className="mt-8 pl-12 flex flex-col gap-16 pt-10 relative max-md:pl-4">
             <motion.div
               variants={{
                 hidden: { opacity: 0 },
@@ -137,15 +137,15 @@ export const Services = () => {
                 }`}
                   onMouseEnter={() => setHovered(index)}
                 >
-                  <div className="w-10 h-10 rounded-lg border-gradient relative z-[1] flex items-center justify-center">
+                  <div className="w-10 h-10 rounded-lg border-gradient relative z-[1] flex items-center justify-center max-md:min-w-10">
                     <i className={`${service.icon} text-xl absolute z-10`} />
                   </div>
                   <div className="relative flex flex-col max-w-[500px]">
                     <span className="tracking-[.4em] font-black text-sm opacity-20 absolute -top-7 left-0">
                       [{service.id}]
                     </span>
-                    <h3 className="text-3xl mb-2">{service.title}</h3>
-                    <p className="w-3/4 opacity-50 font-medium">
+                    <h3 className="text-3xl mb-2 max-md:text-2xl max-md:-mt-1">{service.title}</h3>
+                    <p className="w-3/4 opacity-50 font-medium max-md:w-full max-md:text-sm">
                       {service.desc}
                     </p>
                   </div>
@@ -154,7 +154,7 @@ export const Services = () => {
             ))}
           </ul>
 
-          <div className="flex-1 overflow-hidden bg-blue-50 p-4 mt-5 border-2 border-black/5 rounded-3xl relative">
+          <div className="flex-1 overflow-hidden bg-blue-50 p-4 mt-5 border-2 border-black/5 rounded-3xl relative max-xl:hidden">
             {services.map((service, index) => (
               <div
                 key={service.id}

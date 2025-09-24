@@ -67,9 +67,9 @@ export const Notices = () => {
           },
         },
       }}
-      className="bg-white relative overflow-hidden"
+      className="bg-white relative overflow-hidden max-2xl:px-10 max-xl:px-6"
     >
-      <div className="max-w-[1200px] mx-auto py-20 h-full flex flex-col relative z-10">
+      <div className="max-w-[1200px] mx-auto py-20 h-full flex flex-col relative z-10 max-md:py-10">
         <motion.div
           variants={{
             hidden: { y: -100, opacity: 0 },
@@ -94,7 +94,7 @@ export const Notices = () => {
           }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-black text-6xl mt-6 relative">
+          <h2 className="text-black text-6xl mt-6 relative max-md:text-5xl">
             Aqui você encontra{" "}
             <span className="bg-gradient-to-r from-blue-300 to-purple-200 bg-clip-text text-transparent">
               Nossas Notícias
@@ -110,6 +110,17 @@ export const Notices = () => {
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log("slide change")}
           className="w-full"
+          breakpoints={{
+            0: {
+              slidesPerView: 1,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            1024: {
+              slidesPerView: 3,
+            },
+          }}
         >
           {NOTICES.map((notice) => {
             return (

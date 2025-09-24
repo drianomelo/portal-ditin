@@ -19,9 +19,9 @@ export const Results = () => {
           },
         },
       }}
-      className="h-screen"
+      className="h-screen max-2xl:px-10 max-xl:h-auto max-lg:px-6"
     >
-      <div className="max-w-[1200px] mx-auto py-20">
+      <div className="max-w-[1200px] mx-auto py-20 max-md:py-10">
         <div className="flex flex-col justify-center items-center gap-8 mb-12">
           <motion.div
             variants={{
@@ -39,6 +39,7 @@ export const Results = () => {
               Resultados
             </span>
           </motion.div>
+
           <motion.div
             variants={{
               hidden: { x: -50, opacity: 0 },
@@ -47,7 +48,7 @@ export const Results = () => {
             transition={{ duration: 0.5 }}
             className="flex justify-center"
           >
-            <p className="text-xl font-medium text-white text-center w-3/4">
+            <p className="text-xl leading-[1.3] font-medium text-white text-center w-3/4 max-lg:w-full max-lg:text-lg max-md:text-sm">
               Estamos fortalecendo o relacionamento com a comunidade, ampliando
               o alcance das nossas ações e garantindo maior eficiência na
               entrega de serviços públicos.{" "}
@@ -59,7 +60,7 @@ export const Results = () => {
           </motion.div>
         </div>
 
-        <div className="flex items-end justify-between mb-12">
+        <div className="flex items-end justify-between mb-12 max-md:justify-center">
           <motion.div
             variants={{
               hidden: { x: -50, opacity: 0 },
@@ -67,10 +68,11 @@ export const Results = () => {
             }}
             transition={{ duration: 0.3 }}
           >
-            <span className="text-lg font-bold text-white flex items-end gap-2">
+            <span className="text-lg font-bold text-white flex items-end gap-2 max-md:hidden">
               DITIN <span className="opacity-30 font-normal">em Números</span>{" "}
             </span>
           </motion.div>
+          
           <motion.div
             variants={{
               hidden: { x: 50, opacity: 0 },
