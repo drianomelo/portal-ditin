@@ -1,3 +1,4 @@
+import { Footer } from "./components/Footer";
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
 import { Notices } from "./components/Notices";
@@ -24,6 +25,8 @@ function App() {
       <Team />
 
       <Notices />
+
+      <Footer />
     </>
   );
 }
