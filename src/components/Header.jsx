@@ -1,4 +1,4 @@
-export const Header = () => {
+export const Header = ({ interno }) => {
   return (
     <header className="w-full flex justify-between items-center gap-20 px-8 max-lg:py-6 max-lg:px-6 max-lg:justify-center max-md:px-3 relative z-20">
       <button className="items-center justify-center h-10 w-10 bg-[#43464e75] rounded-lg border-2 hidden border-[#ffffff2a] max-lg:absolute max-lg:left-6 max-lg:flex max-md:left-3">
@@ -9,11 +9,13 @@ export const Header = () => {
         />
       </button>
 
-      <img
-        className="max-w-20 w-full"
-        src="/public/images/logo-ditin-w.svg"
-        alt="Logo da DITIN"
-      />
+      <a href="/" className="max-w-20 w-full">
+        <img
+          className="w-full"
+          src="/public/images/logo-ditin-w.svg"
+          alt="Logo da DITIN"
+        />
+      </a>
 
       <nav className="py-4 w-full relative before:content-[''] before:absolute before:w-full before:h-[2px] before:bottom-0 before:bg-gradient-to-r before:from-transparent before:via-[#ffffff2a] before:to-transparent max-lg:hidden">
         <ul className="flex gap-4 justify-center items-center">
@@ -30,32 +32,40 @@ export const Header = () => {
               Início
             </a>
           </li>
-          <li>
-            <a
-              href="#projetos"
-              className="flex opacity-50 items-center gap-3 py-1.5 font-medium px-4 rounded-lg border-2 border-transparent transition-all hover:opacity-100 hover:bg-[#43464e75] hover:border-[#ffffff2a]"
-            >
-              <img
-                className="w-5"
-                src="/public/images/icons/icon-project-w.svg"
-                alt="Icone de Projetos"
-              />
-              Projetos
-            </a>
-          </li>
-          <li>
-            <a
-              href="#equipe"
-              className="flex opacity-50 items-center gap-3 py-1.5 font-medium px-4 rounded-lg border-2 border-transparent transition-all hover:opacity-100 hover:bg-[#43464e75] hover:border-[#ffffff2a]"
-            >
-              <img
-                className="w-5"
-                src="/public/images/icons/icon-team-w.svg"
-                alt="Icone de Equipe"
-              />
-              Equipe
-            </a>
-          </li>
+          {!interno ? (
+            <li>
+              <a
+                href="/#projetos"
+                className="flex opacity-50 items-center gap-3 py-1.5 font-medium px-4 rounded-lg border-2 border-transparent transition-all hover:opacity-100 hover:bg-[#43464e75] hover:border-[#ffffff2a]"
+              >
+                <img
+                  className="w-5"
+                  src="/public/images/icons/icon-project-w.svg"
+                  alt="Icone de Projetos"
+                />
+                Projetos
+              </a>
+            </li>
+          ) : (
+            ""
+          )}
+          {!interno ? (
+            <li>
+              <a
+                href="/#equipe"
+                className="flex opacity-50 items-center gap-3 py-1.5 font-medium px-4 rounded-lg border-2 border-transparent transition-all hover:opacity-100 hover:bg-[#43464e75] hover:border-[#ffffff2a]"
+              >
+                <img
+                  className="w-5"
+                  src="/public/images/icons/icon-team-w.svg"
+                  alt="Icone de Equipe"
+                />
+                Equipe
+              </a>
+            </li>
+          ) : (
+            ""
+          )}
         </ul>
       </nav>
 
