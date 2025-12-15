@@ -18,7 +18,7 @@ export const Projeto = () => {
         className="flex flex-col w-full"
         style={{ minHeight: "calc(100vh + 1px)" }}
       >
-        <Header />
+        <Header interno={true} />
 
         <div className="w-full h-screen flex-1 flex items-center">
           <div className="absolute -top-20 -right-60">

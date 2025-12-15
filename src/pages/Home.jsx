@@ -13,7 +13,7 @@ export const Home = () => {
         className="flex flex-col w-full"
         style={{ minHeight: "calc(100vh + 1px)" }}
       >
-        <Header />
+        <Header interno={false} />
 
         <Hero />
       </div>
@@ -26,7 +26,7 @@ export const Home = () => {
 
       <Notices />
 
-      <Footer color="bg-white"/>
+      <Footer color="bg-white" />
     </>
   );
 };
