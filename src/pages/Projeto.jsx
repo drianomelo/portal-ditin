@@ -247,12 +247,12 @@ export const Projeto = () => {
           <div className="mt-14 flex gap-8">
             {projeto.news.map((n, i) => {
               return (
-                <div className="flex flex-col gap-4 w-[400px]" key={i}>
+                <div className="flex flex-col gap-4 w-[380px]" key={i}>
                   <div className="w-full h-[220px] relative">
                     <img
                       src={n.image}
                       alt={n.title}
-                      className="h-full rounded-lg"
+                      className="h-full rounded-lg w-full"
                     />
                     <div className="absolute bottom-1.5 right-1.5 rounded bg-black/70 p-1">
                       <Globe size={14} />
