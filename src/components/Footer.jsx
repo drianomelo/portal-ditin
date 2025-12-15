@@ -57,7 +57,7 @@ export const Footer = ({ color }) => {
 
           <div className="flex flex-col items-center">
             <button className="w-12 h-12 bg-blue-500 rounded-xl mb-4">
-              <i class="fa-solid fa-arrow-up-long mt-2"></i>
+              <i className="fa-solid fa-arrow-up-long mt-2"></i>
             </button>
             <span className="text-sm font-semibold">Voltar ao Topo</span>
           </div>
