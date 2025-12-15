@@ -1,6 +1,6 @@
 export const Header = () => {
   return (
-    <header className="w-full flex justify-between items-center gap-20 px-8 max-lg:py-6 max-lg:px-6 max-lg:justify-center max-md:px-3 relative">
+    <header className="w-full flex justify-between items-center gap-20 px-8 max-lg:py-6 max-lg:px-6 max-lg:justify-center max-md:px-3 relative z-20">
       <button className="items-center justify-center h-10 w-10 bg-[#43464e75] rounded-lg border-2 hidden border-[#ffffff2a] max-lg:absolute max-lg:left-6 max-lg:flex max-md:left-3">
         <img
           className="w-5"
@@ -32,7 +32,7 @@ export const Header = () => {
           </li>
           <li>
             <a
-              href="/noticias"
+              href="#projetos"
               className="flex opacity-50 items-center gap-3 py-1.5 font-medium px-4 rounded-lg border-2 border-transparent transition-all hover:opacity-100 hover:bg-[#43464e75] hover:border-[#ffffff2a]"
             >
               <img
@@ -45,7 +45,7 @@ export const Header = () => {
           </li>
           <li>
             <a
-              href="/servicos"
+              href="#equipe"
               className="flex opacity-50 items-center gap-3 py-1.5 font-medium px-4 rounded-lg border-2 border-transparent transition-all hover:opacity-100 hover:bg-[#43464e75] hover:border-[#ffffff2a]"
             >
               <img
