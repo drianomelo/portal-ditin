@@ -14,6 +14,7 @@ export const Team = () => {
           },
         },
       }}
+      id="equipe"
     >
       <div className="max-w-[1200px] mx-auto pt-10 pb-16 h-full flex flex-col max-2xl:px-10 max-lg:px-6">
         <div className="flex flex-col justify-center items-center gap-8 mb-14 max-md:mb-10">

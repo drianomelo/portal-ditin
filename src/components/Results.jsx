@@ -20,6 +20,7 @@ export const Results = () => {
         },
       }}
       className="h-screen max-2xl:px-10 max-xl:h-auto max-lg:px-6"
+      id="projetos"
     >
       <div className="max-w-[1200px] mx-auto py-20 max-md:py-10">
         <div className="flex flex-col justify-center items-center gap-8 mb-12">
@@ -72,7 +73,7 @@ export const Results = () => {
               DITIN <span className="opacity-30 font-normal">em Números</span>{" "}
             </span>
           </motion.div>
-          
+
           <motion.div
             variants={{
               hidden: { x: 50, opacity: 0 },
