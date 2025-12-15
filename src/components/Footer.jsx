@@ -1,6 +1,6 @@
-export const Footer = () => {
+export const Footer = ({ color }) => {
   return (
-    <footer className="bg-white relative overflow-hidden">
+    <footer className={`${color} relative overflow-hidden`}>
       <div className="w-full bg-[#010614] pt-14 pb-24 px-10 rounded-t-3xl max-lg:pb-16">
         <div className="max-w-[1200px] mx-auto flex items-start justify-between gap-6 relative z-10 max-lg:flex-col max-lg:gap-10">
           <div className="max-w-[250px] max-md:max-w-full">
