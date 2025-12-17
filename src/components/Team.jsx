@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 export const Team = () => {
   return (
@@ -16,7 +17,7 @@ export const Team = () => {
       }}
       id="equipe"
     >
-      <div className="max-w-[1200px] mx-auto pt-10 pb-16 h-full flex flex-col max-2xl:px-10 max-lg:px-6">
+      <div className="max-w-[1200px] mx-auto pt-10 pb-28 h-full flex flex-col max-2xl:px-10 max-lg:px-6">
         <div className="flex flex-col justify-center items-center gap-8 mb-14 max-md:mb-10">
           <motion.div
             variants={{
@@ -384,71 +385,83 @@ export const Team = () => {
               transition={{ duration: 0.3 }}
               className="relative max-w-[320px] p-[2px] overflow-hidden rounded-xl"
             >
-              <div className="absolute top-2/4 left-2/4 -translate-2/4 w-[150%] h-[200%] bg-gradient-to-tr from-purple-950 via-[#010614] via-75% to-purple-800 animate-[spin_4s_linear_infinite]"></div>
+              <Link
+                to={`/equipes/cosis`}
+                state={{
+                  team: {
+                    slug: "cosis",
+                    name: "Coordenadoria de Desenvolvimento de Sistemas de Banco de Dados",
+                    img: "/images/team/dev.png",
+                  },
+                }}
+              >
+                <div className="absolute top-2/4 left-2/4 -translate-2/4 w-[150%] h-[200%] bg-gradient-to-tr from-purple-950 via-[#010614] via-75% to-purple-800 animate-[spin_4s_linear_infinite]"></div>
 
-              <div className="relative z-20 overflow-hidden p-4 rounded-xl bg-[#010614]">
-                <span className="text-purple-400 font-black text-[10px] tracking-[.3rem] mb-3 block relative z-10">
-                  COSIS
-                </span>
-                <h3 className="font-semibold text-white leading-[1.2] mb-2 relative z-10">
-                  Coordenadoria de Desenvolvimento de Sistemas de Banco de Dados
-                </h3>
-                <p className="text-xs opacity-40 text-white w-[90%] relative z-10 mb-4">
-                  Com uma equipe altamente qualificada, projetamos,
-                  implementamos e mantemos uma base sólida de hardware redes e
-                  sistemas essenciais.
-                </p>
-
-                <div className="absolute top-0 -right-25">
-                  <img
-                    className="max-w-[350px] opacity-70"
-                    src="/images/team/dev.png"
-                    alt="Imagem de uma equipe de desenvolvimento"
-                  />
-
-                  <div className="w-2/4 h-full bg-gradient-to-r from-[#010614] absolute top-0"></div>
-                  <div className="w-2/4 h-full bg-gradient-to-r from-[#010614] absolute top-0"></div>
-                  <div className="w-full h-full bg-gradient-to-t from-[#010614] absolute top-0"></div>
-                </div>
-
-                <div className="relative">
-                  <span className="text-white opacity-20 text-xs block mb-2">
-                    Time de Desenvolvedores:
+                <div className="relative z-20 overflow-hidden p-4 rounded-xl bg-[#010614]">
+                  <span className="text-purple-400 font-black text-[10px] tracking-[.3rem] mb-3 block relative z-10">
+                    COSIS
                   </span>
-                  <div className="flex items-center gap-2">
+                  <h3 className="font-semibold text-white leading-[1.2] mb-2 relative z-10">
+                    Coordenadoria de Desenvolvimento de Sistemas de Banco de
+                    Dados
+                  </h3>
+                  <p className="text-xs opacity-40 text-white w-[90%] relative z-10 mb-4">
+                    Com uma equipe altamente qualificada, projetamos,
+                    implementamos e mantemos uma base sólida de hardware redes e
+                    sistemas essenciais.
+                  </p>
+
+                  <div className="absolute top-0 -right-25">
                     <img
-                      className="relative w-[26px] z-10"
-                      src="/images/team/herbert-h.png"
-                      alt="Logo da DITIN"
+                      className="max-w-[350px] opacity-70"
+                      src="/images/team/dev.png"
+                      alt="Imagem de uma equipe de desenvolvimento"
                     />
-                    <img
-                      className="relative w-[27px] z-10"
-                      src="/images/team/rony-h.png"
-                      alt="Logo da DITIN"
-                    />
-                    <img
-                      className="relative w-[31px] z-10"
-                      src="/images/team/adriano-h.png"
-                      alt="Logo da DITIN"
-                    />
-                    <img
-                      className="relative w-[31px] z-10"
-                      src="/images/team/bruna-h.png"
-                      alt="Logo da DITIN"
-                    />
-                    <img
-                      className="relative w-[29px] z-10"
-                      src="/images/team/tercio-h.png"
-                      alt="Logo da DITIN"
-                    />
-                    <img
-                      className="relative w-[28px] z-10"
-                      src="/images/team/rodrigo-h.png"
-                      alt="Logo da DITIN"
-                    />
+
+                    <div className="w-2/4 h-full bg-gradient-to-r from-[#010614] absolute top-0"></div>
+                    <div className="w-2/4 h-full bg-gradient-to-r from-[#010614] absolute top-0"></div>
+                    <div className="w-full h-full bg-gradient-to-t from-[#010614] absolute top-0"></div>
+                  </div>
+
+                  <div className="relative">
+                    <span className="text-white opacity-20 text-xs block mb-2">
+                      Time de Desenvolvedores:
+                    </span>
+                    <div className="flex items-center gap-2">
+                      <img
+                        className="relative w-[26px] z-10"
+                        src="/images/team/herbert-h.png"
+                        alt="Logo da DITIN"
+                      />
+                      <img
+                        className="relative w-[27px] z-10"
+                        src="/images/team/rony-h.png"
+                        alt="Logo da DITIN"
+                      />
+                      <img
+                        className="relative w-[31px] z-10"
+                        src="/images/team/adriano-h.png"
+                        alt="Logo da DITIN"
+                      />
+                      <img
+                        className="relative w-[31px] z-10"
+                        src="/images/team/bruna-h.png"
+                        alt="Logo da DITIN"
+                      />
+                      <img
+                        className="relative w-[29px] z-10"
+                        src="/images/team/tercio-h.png"
+                        alt="Logo da DITIN"
+                      />
+                      <img
+                        className="relative w-[28px] z-10"
+                        src="/images/team/rodrigo-h.png"
+                        alt="Logo da DITIN"
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             </motion.div>
           </div>
 
