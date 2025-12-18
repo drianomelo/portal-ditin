@@ -135,11 +135,6 @@ export const Team = () => {
                       alt="Logo da DITIN"
                     />
                     <img
-                      className="relative w-[31px] z-10"
-                      src="/images/team/emanoel-h.png"
-                      alt="Logo da DITIN"
-                    />
-                    <img
                       className="relative w-[29px] z-10"
                       src="/images/team/raphael-h.png"
                       alt="Logo da DITIN"
