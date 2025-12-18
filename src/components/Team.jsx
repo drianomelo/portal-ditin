@@ -29,7 +29,7 @@ export const Team = () => {
             <span className="flex items-center w-fit gap-2 bg-[#43464e75] py-1.5 font-medium px-2 rounded-xl border-2 border-[#ffffff2a]">
               <img
                 className="w-5"
-                src="/public/images/icons/icon-team-w.svg"
+                src="/images/icons/icon-team-w.svg"
                 alt="Icone de Casa"
               />
               Equipe

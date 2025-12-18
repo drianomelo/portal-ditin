@@ -6,7 +6,7 @@ export const Footer = ({ color }) => {
           <div className="max-w-[250px] max-md:max-w-full">
             <img
               className="max-w-20 w-full mb-10"
-              src="/public/images/logo-ditin-w.svg"
+              src="/images/logo-ditin-w.svg"
               alt="Logo da DITIN"
             />
 

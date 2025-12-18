@@ -56,7 +56,7 @@ export const Hero = () => {
           >
             <img
               className="w-5"
-              src="/public/images/icons/icon-location-w.svg"
+              src="/images/icons/icon-location-w.svg"
               alt="Icone de Casa"
             />
             São Cristóvão

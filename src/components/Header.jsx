@@ -4,7 +4,7 @@ export const Header = ({ interno }) => {
       <button className="items-center justify-center h-10 w-10 bg-[#43464e75] rounded-lg border-2 hidden border-[#ffffff2a] max-lg:absolute max-lg:left-6 max-lg:flex max-md:left-3">
         <img
           className="w-5"
-          src="/public/images/icons/icon-menu-w.svg"
+          src="/images/icons/icon-menu-w.svg"
           alt="Icone de Casa"
         />
       </button>
@@ -12,7 +12,7 @@ export const Header = ({ interno }) => {
       <a href="/" className="max-w-20 w-full">
         <img
           className="w-full"
-          src="/public/images/logo-ditin-w.svg"
+          src="/images/logo-ditin-w.svg"
           alt="Logo da DITIN"
         />
       </a>
@@ -26,7 +26,7 @@ export const Header = ({ interno }) => {
             >
               <img
                 className="w-5"
-                src="/public/images/icons/icon-home-w.svg"
+                src="/images/icons/icon-home-w.svg"
                 alt="Icone de Casa"
               />
               Início
@@ -40,7 +40,7 @@ export const Header = ({ interno }) => {
               >
                 <img
                   className="w-5"
-                  src="/public/images/icons/icon-project-w.svg"
+                  src="/images/icons/icon-project-w.svg"
                   alt="Icone de Projetos"
                 />
                 Projetos
@@ -57,7 +57,7 @@ export const Header = ({ interno }) => {
               >
                 <img
                   className="w-5"
-                  src="/public/images/icons/icon-team-w.svg"
+                  src="/images/icons/icon-team-w.svg"
                   alt="Icone de Equipe"
                 />
                 Equipe

@@ -181,7 +181,7 @@ export const Notices = () => {
                 <div>
                   <img
                     className="max-w-[50px] w-full"
-                    src="/public/images/logo-ditin-b.svg"
+                    src="/images/logo-ditin-b.svg"
                     alt="Logo São Cristóvão"
                   />
                 </div>
